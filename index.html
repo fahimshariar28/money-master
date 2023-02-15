@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Money Master</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <header>
+      <h1 class="text-5xl mt-5 text-center text-sky-600 font-semibold">
+        Money Master
+      </h1>
+    </header>
+    <main>
+      <section class="w-9/12 mx-auto mt-5">
+        <div class="flex gap-10">
+          <div class="mt-5">
+            <img class="object-cover" src="images/money-master.png" alt="" />
+          </div>
+          <div class="mt-5 bg-gray-300 px-10 p-3">
+            <h3 class="text-2xl text-center font-medium">Income</h3>
+            <div class="mt-4">
+              <p class="inline">Income:</p>
+              <input
+                id="total-income"
+                class="ml-2 bg-gray-500 px-3 py-1 rounded-md"
+                type="text"
+              />
+            </div>
+            <h3 class="text-2xl text-center font-medium">Expenses</h3>
+            <div class="flex flex-col justify-center items-center">
+                <div class="mt-4">
+              <p class="inline">Food:</p>
+              <input
+                id="food-expenses"
+                class="ml-2 bg-gray-500 px-3 py-1 rounded-md"
+                type="text"
+              />
+            </div>
+            <div class="mt-4">
+              <p class="inline">Rent:</p>
+              <input
+                id="rent-expenses"
+                class="ml-2 bg-gray-500 px-3 py-1 rounded-md"
+                type="text"
+              />
+            </div>
+            <div class="mt-4">
+              <p class="inline">Cloths:</p>
+              <input
+                id="cloth-expenses"
+                class="ml-2 bg-gray-500 px-3 py-1 rounded-md"
+                type="text"
+              />
+            </div>
+            </div>
+            <div class="flex justify-center">
+                <button
+              id="calculate-btn"
+              class="text-xl text-center bg-sky-500 px-3 py-1 px-5 py-2 mt-5 rounded-md"
+            >
+              Calculate
+            </button>
+            </div>
+            <h3 class="text-2xl text-center font-medium">
+              Total Expenses: <span id="total-expenses">00</span>
+            </h3>
+            <h3 class="text-2xl text-center font-medium">
+              Balance: <span id="new-balance">00</span>
+            </h3>
+            <div class="mt-5">
+              <p class="inline">Save:</p>
+              <input id="saving-percent" class="bg-gray-500 px-3 py-1 rounded-md" type="text" />
+              <p class="inline">%</p>
+              <button
+              id="save-btn"
+              class="text-xl text-center bg-sky-500 px-3 py-1 mt-5 rounded-md"
+            >
+              Save
+            </button>
+            <h3 class="text-2xl text-center font-medium mt-4">
+              Saving Amount: <span id="saving-amount">00</span>
+            </h3>
+            <h3 class="text-2xl text-center font-medium mt-4">
+              Remaining Amount: <span id="remaining-amount">00</span>
+            </h3>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="script/common.js"></script>
+    <script src="script/main.js"></script>
+  </body>
+</html>
